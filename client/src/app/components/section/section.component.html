@@ -1,26 +1,11 @@
-<div class="section">
-    <div class="sectionTitle">Work Experience</div>
-    <ul class="sectionList">
+<div class="section" *ngFor="let section of sections$ | async">
+    <div class="sectionTitle">{{ section.title }}</div>
+    <ul class="sectionList" *ngFor="let field of section.information">
         <li class="sectionElement">
-            <div>2013 - 2015</div> 
+            <div>{{ field.title }}</div> 
             <div>
-                 <p>Lorem ipsum dolor sit amet.</p> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+              <p>{{ field.value }}</p>
             </div>
-        </li>
-        <li class="sectionElement">
-          <div>2015 - 2017</div>
-          <div>
-              <p>Lorem ipsum dolor sit amet.</p> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-          </div>
-        </li>
-        <li class="sectionElement">
-          <div>2017 - Present</div>
-          <div>
-              <p>Lorem ipsum dolor sit amet.</p> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-          </div>
         </li>
     </ul>
 </div>

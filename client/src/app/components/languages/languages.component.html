@@ -1,25 +1,11 @@
-<div class="languages">
+<div class="languages" *ngFor="let section of sections$ | async">
     <div class="languagesTitle">Languages</div>
-    <ul class="languagesList">
+    <ul class="languagesList" *ngFor="let field of section.information">
       <li class="languagesElement">
-        <div class="languagesElementTitle">English</div>
+        <div class="languagesElementTitle">{{ field.title }}</div>
         <div class="languagesBar">
-          <span class="languagesComplete" style="width: 90%;"></span>
-          <div class="languagesProgress">90%</div>
-        </div>
-      </li>
-      <li class="languagesElement">
-        <div class="languagesElementTitle">Arabic</div>
-        <div class="languagesBar">
-          <span class="languagesComplete" style="width: 85%;"></span>
-          <div class="languagesProgress">85%</div>
-        </div>
-      </li>
-      <li class="languagesElement">
-        <div class="languagesElementTitle">French</div>
-        <div class="languagesBar">
-          <span class="languagesComplete" style="width: 40%;"></span>
-          <div class="languagesProgress">40%</div>
+          <span class="languagesComplete" [ngStyle]="{'width': field.value}"></span>
+          <div class="languagesProgress">{{ field.value }}</div>
         </div>
       </li>
     </ul>

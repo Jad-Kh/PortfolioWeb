@@ -1,5 +1,6 @@
-<div class="about">
+<div class="about" *ngFor="let section of sections$ | async">
       <p class="aboutTitle">About me</p>
-      <p class="aboutText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam
-       atque exercitationem inventore repudiandae?</p>
+      <div *ngFor="let field of section.information">
+            <p class="aboutText">{{ field.value }}</p>
+      </div>
 </div>
