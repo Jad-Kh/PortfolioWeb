@@ -1,0 +1,8 @@
+<div class="register">
+    <form class="registerForm" [formGroup]="registerForm" (ngSubmit)="register()">
+        <input placeholder="username" formControlName="username" class="registerInput"/>
+        <input placeholder="password" formControlName="password" type="password" class="registerInput"/>
+        <input placeholder="confirm" formControlName="confirm" type="password" class="registerInput"/>
+        <button type="submit" class="registerButton">Log In</button>
+    </form>
+</div>

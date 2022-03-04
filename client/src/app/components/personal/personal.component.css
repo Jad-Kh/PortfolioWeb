@@ -1,0 +1,31 @@
+  .personal {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+  }
+
+  .personalName {
+      color: #ffffff;
+  }
+
+  .personalJobTitle {
+    color: #b1eaff;
+  }
+
+  .personalList {
+      list-style: square;
+  }
+
+  .personalElement {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personalElementTitle {
+      color: #ffffff;
+  }
+
+  .personalElementContext {
+      padding-left: 10px;
+      color: #b1eaff;
+      margin-bottom: 5px;
+  }

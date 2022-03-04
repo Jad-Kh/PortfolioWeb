@@ -1,0 +1,10 @@
+<div class="navbar">
+    <ul class="navbarList" *ngIf="isAuthenticated">
+      <li class="navbarListElement" routerLink="/">Username</li>
+      <li class="navbarListElement">New</li>
+      <li class="navbarListElement" (click)="logout()" routerLink="/login">Log out</li>
+    </ul>
+    <ul class="navbarList" *ngIf="!isAuthenticated">
+      <li class="navbarListElement" routerLink="/login">Log In</li>
+    </ul>
+</div>

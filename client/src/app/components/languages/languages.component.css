@@ -1,0 +1,39 @@
+  .languagesElement {
+    display: flex;
+    margin-bottom: 10px;
+    color: #b1eaff;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .languagesTitle {
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .languagesElementTitle {
+    width: 25%;
+    margin-bottom: 5px;
+  }
+  
+  .languagesBar {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+  }
+  
+  .languagesComplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+  }
+
+  .languagesProgress {
+    float: right;
+    width: 15%;
+    padding: 5px;
+  }

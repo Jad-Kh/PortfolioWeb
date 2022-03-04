@@ -1,0 +1,12 @@
+  .about {
+    background: #0bb5f4;
+    border-bottom: 2px solid #b1eaff;
+  }
+  
+  .aboutTitle {
+    color: #ffffff;
+  }
+
+  .aboutText {
+    color: #b1eaff;
+  }

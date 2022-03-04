@@ -1,0 +1,30 @@
+  .section {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+    overflow: hidden;
+  }
+
+  .sectionTitle {
+      color: #0bb5f4;
+  }
+
+  .sectionList .sectionElement:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+  }
+  
+  .sectionList .sectionElement:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: #0bb5f4;
+  }
