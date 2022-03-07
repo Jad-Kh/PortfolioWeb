@@ -1,12 +1,20 @@
-<div class="resume">
-    <div class="resume_left">
-      <div class="resume_content">
+<div class="portfolio">
+  <p-splitter layout="horizontal" [style]="{'width': '50%', 'height': 'auto'}" [panelSizes]="[40,60]">
+    <ng-template pTemplate>
+      <p-splitter layout="vertical">
+        <ng-template pTemplate>
           <app-personal></app-personal>
+        </ng-template>
+        <ng-template pTemplate>
           <app-about></app-about>
+        </ng-template>
+        <ng-template pTemplate>
           <app-languages></app-languages>
-      </div>
-   </div>
-   <div class="resume_right">
-     <app-section></app-section>
-   </div>
+        </ng-template>
+      </p-splitter>
+    </ng-template>
+    <ng-template pTemplate>
+      <app-section></app-section>
+    </ng-template>
+  </p-splitter>
  </div>

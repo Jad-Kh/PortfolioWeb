@@ -20,6 +20,8 @@ import { SectionInputComponent } from './inputs/section-input/section-input.comp
 import { AboutInputComponent } from './inputs/about-input/about-input.component';
 import { LanguagesInputComponent } from './inputs/languages-input/languages-input.component';
 
+import { SplitterModule } from 'primeng/splitter';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,7 @@ import { LanguagesInputComponent } from './inputs/languages-input/languages-inpu
     HttpClientModule,
     FormsModule, 
     ReactiveFormsModule,
+    SplitterModule
   ],
   providers: [
     {
