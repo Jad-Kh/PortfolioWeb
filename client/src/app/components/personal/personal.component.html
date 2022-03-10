@@ -1,10 +1,9 @@
 <div class="personal" *ngFor="let section of sections$ | async">
       <p class="personalName">{{ username$ }}</p>
-      <p class="personalJobTitle">{{ section.information[0].value }}</p>
     <ul class="personalList" *ngFor="let field of section.information">
       <li class="personalElement">
           <div class="personalElementTitle">{{ field.title }}:</div>
           <div class="personalElementContext">{{ field.value }}</div>
       </li>
     </ul>
-  </div>
+</div>

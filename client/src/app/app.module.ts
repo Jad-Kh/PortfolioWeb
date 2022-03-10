@@ -21,6 +21,8 @@ import { AboutInputComponent } from './inputs/about-input/about-input.component'
 import { LanguagesInputComponent } from './inputs/languages-input/languages-input.component';
 
 import { SplitterModule } from 'primeng/splitter';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { SplitterModule } from 'primeng/splitter';
     HttpClientModule,
     FormsModule, 
     ReactiveFormsModule,
-    SplitterModule
+    SplitterModule,
+    ProgressBarModule,
+    RatingModule 
   ],
   providers: [
     {

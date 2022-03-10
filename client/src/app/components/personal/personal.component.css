@@ -1,14 +1,10 @@
   .personal {
-    padding: 25px 0;
-    border-bottom: 2px solid #b1eaff;
+    width: 100%;
+    display: block;
   }
 
   .personalName {
       color: #ffffff;
-  }
-
-  .personalJobTitle {
-    color: #b1eaff;
   }
 
   .personalList {

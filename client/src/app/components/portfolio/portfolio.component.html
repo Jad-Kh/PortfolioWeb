@@ -1,7 +1,7 @@
 <div class="portfolio">
-  <p-splitter layout="horizontal" [style]="{'width': '50%', 'height': 'auto'}" [panelSizes]="[40,60]">
+  <p-splitter layout="horizontal" [style]="{'width': '50%', 'height': 'auto', border: 'none'}">
     <ng-template pTemplate>
-      <p-splitter layout="vertical">
+      <p-splitter layout="vertical" [style]="{'background': '#0bb5f4', 'padding': '5px 2px 20px 20px'}">
         <ng-template pTemplate>
           <app-personal></app-personal>
         </ng-template>
@@ -17,4 +17,4 @@
       <app-section></app-section>
     </ng-template>
   </p-splitter>
- </div>
+</div>

@@ -17,6 +17,7 @@ import { User } from "src/app/models/User";
 export class LanguagesComponent implements OnInit {
 
   sections$!: Observable<Section[]>;
+  languageValues$ : String[] = [];
   userId!: Pick<User, "id">;
 
   constructor(
@@ -36,5 +37,4 @@ export class LanguagesComponent implements OnInit {
             sections.filter(section => section.title.toLowerCase() === "languages"))
       );
   }
-
 }

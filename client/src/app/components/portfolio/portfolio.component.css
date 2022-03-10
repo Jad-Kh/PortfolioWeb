@@ -1,4 +1,5 @@
 .portfolio {
     display: flex;
     margin: 50px auto;
+    border: 1px solid;
 }

@@ -3,10 +3,10 @@
     <ul class="languagesList" *ngFor="let field of section.information">
       <li class="languagesElement">
         <div class="languagesElementTitle">{{ field.title }}</div>
-        <div class="languagesBar">
-          <span class="languagesComplete" [ngStyle]="{'width': field.value}"></span>
-          <div class="languagesProgress">{{ field.value }}</div>
-        </div>
       </li>
+      <p-progressBar [value]="field.value" [style]="{'height': '18px', 
+                                                     'width': '180px', 
+                                                     'margin-right': '5px',
+                                                     'background': '#b1eaff'}"></p-progressBar>
     </ul>
-  </div>
+</div>

@@ -1,5 +1,14 @@
+  .languages {
+    width: 100%;
+  }
+  
+  .languagesList {
+    list-style: circle;
+  }
+  
   .languagesElement {
     display: flex;
+    width: 80%;
     margin-bottom: 10px;
     color: #b1eaff;
     justify-content: space-between;
@@ -12,28 +21,11 @@
   }
 
   .languagesElementTitle {
-    width: 25%;
+    width: 100%;
     margin-bottom: 5px;
   }
-  
-  .languagesBar {
-    width: 60%;
-    margin: 0 5px;
-    height: 5px;
-    background: #009fd9;
-    position: relative;
-  }
-  
-  .languagesComplete {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #fff;
-  }
 
-  .languagesProgress {
-    float: right;
-    width: 15%;
-    padding: 5px;
+  .languagesBar {
+    width: 100%;
+    margin-bottom: 5px;
   }
