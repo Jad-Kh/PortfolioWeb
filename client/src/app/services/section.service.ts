@@ -7,7 +7,7 @@ import { catchError, first } from "rxjs/operators";
 import { Section } from "../models/Section";
 import { User } from "../models/User";
 import { ErrorHandlerService } from "./error-handler.service";
-import { AuthService } from "./auth-service";
+import { AuthService } from "./auth.service";
 
 @Injectable({
     providedIn: "root",

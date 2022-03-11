@@ -1,8 +1,21 @@
 <div class="register">
     <form class="registerForm" [formGroup]="registerForm" (ngSubmit)="register()">
+        <h3>Sign up</h3>
         <input placeholder="username" formControlName="username" class="registerInput"/>
+        <div *ngIf="getControl.username.touched && getControl.username.invalid">
+            <span class="registerWarning" *ngIf="getControl.username.errors?.required">Username is required</span>
+        </div>
         <input placeholder="password" formControlName="password" type="password" class="registerInput"/>
+        <div *ngIf="getControl.password.touched && getControl.password.invalid">
+            <span class="registerWarning" *ngIf="getControl.password.errors?.required">Password is required</span>
+            <span class="registerWarning" *ngIf="getControl.password.errors?.minlength">Minimum 5 length</span>
+            <span class="registerWarning" *ngIf="getControl.password.errors?.pattern">Password must include small and big letters and numbers</span>
+        </div>
         <input placeholder="confirm" formControlName="confirm" type="password" class="registerInput"/>
-        <button type="submit" class="registerButton">Log In</button>
+        <div *ngIf="getControl.confirm.touched && getControl.confirm.invalid">
+            <span class="registerWarning" *ngIf="getControl.confirm.errors?.required">Confirmation is required</span>
+            <span class="registerWarning" *ngIf="getControl.confirm.errors?.matching">Must match password</span>
+        </div>
+        <button type="submit" class="registerButton">Register</button>
     </form>
 </div>

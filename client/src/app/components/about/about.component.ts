@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs";
 import { map } from 'rxjs/operators';
 
-import { SectionService } from "src/app/services/section-service";
-import { AuthService } from "src/app/services/auth-service";
+import { SectionService } from "src/app/services/section.service";
+import { AuthService } from "src/app/services/auth.service";
 
 import { Section } from "src/app/models/Section";
 import { User } from "src/app/models/User";
