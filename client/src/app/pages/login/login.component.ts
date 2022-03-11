@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from "../../services/auth-service";
 
 @Component({
@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup 
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = this.createFormGroup();
@@ -26,6 +26,10 @@ export class LoginComponent implements OnInit {
         Validators.minLength(5),
       ]),
     })
+  }
+
+  get getControl(){
+    return this.loginForm.controls;
   }
 
   login(): void {

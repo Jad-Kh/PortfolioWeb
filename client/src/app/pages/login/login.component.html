@@ -1,7 +1,14 @@
 <div class="login">
     <form class="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
+        <h3>Log In</h3>
         <input placeholder="username" formControlName="username" class="loginInput"/>
+        <div *ngIf="getControl.username.touched && getControl.username.invalid">
+            <span class="loginWarning" *ngIf="getControl.username.errors?.required">Username is required</span>
+        </div>
         <input placeholder="password" formControlName="password" type="password" class="loginInput"/>
+        <div *ngIf="getControl.password.touched && getControl.password.invalid">
+            <span class="loginWarning" *ngIf="getControl.password.errors?.required">Password is required</span>
+        </div>
         <button type="submit" class="loginButton">Log In</button>
     </form>
 </div>

@@ -4,15 +4,19 @@
 	height: 56px;
 	padding-left: 18px;
 	border-radius: 10px;
+	position: sticky;
 }
+
 .navbar .navbar.navbarListElement, .navbar .navbarListElement {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none
 }
+
 .navbar .navbar.navbarListElement {
 	width: 100%;
 }
+
 .navbar .navbarListElement {
 	float: left;
 	position: relative;
