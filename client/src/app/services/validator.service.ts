@@ -9,8 +9,6 @@ export class ValidatorService {
         return (controls: AbstractControl) => {
           const control = controls.get(controlName);
           const checkControl = controls.get(checkControlName);
-          console.log(control?.value)
-          console.log(checkControl?.value)
           if (checkControl?.errors && !checkControl.errors.matching) {
             return null;
           }

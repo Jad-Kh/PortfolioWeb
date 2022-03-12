@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup 
 
-  constructor(private authService: AuthService, private formBuilder: FormBuilder, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = this.createFormGroup();
@@ -37,5 +37,9 @@ export class LoginComponent implements OnInit {
       .login(this.loginForm?.value.username, this.loginForm?.value.password)
       .subscribe();
     this.router.navigate(["/"]);
+  }
+
+  navigate(): void {
+     this.router.navigateByUrl('/register');
   }
 }

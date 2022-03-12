@@ -17,5 +17,6 @@
             <span class="registerWarning" *ngIf="getControl.confirm.errors?.matching">Must match password</span>
         </div>
         <button type="submit" class="registerButton">Register</button>
+        <p class="registerLink" (click)="navigate()">Don't have an account? Register</p>
     </form>
 </div>
